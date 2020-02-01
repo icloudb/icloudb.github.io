@@ -19,3 +19,5 @@ browser.close()
 file = open('./_site/ss.html','w')
 file.write(html_source)
 file.close()
+
+print(html_source)
