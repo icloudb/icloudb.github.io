@@ -12,10 +12,10 @@ browser.set_window_size(1024, 768) # optional
 browser.set_page_load_timeout(15)
 browser.get('https://free-ss.site')
 time.sleep(5) #等待
-browser.save_screenshot('screen.png') # save a screenshot to disk
+browser.save_screenshot('./_site/ss.png') # save a screenshot to disk
 html_source = browser.page_source
 browser.close()
 
-file = open('./ss.html','w')
+file = open('./_site/ss.html','w')
 file.write(html_source)
 file.close()
